@@ -49,7 +49,6 @@ class TeamsController extends Controller
     #create new teams based off the number of players in the tournament
     private function createNewTeams($number_of_teams, $faker)
     {
-        $faker = Faker::create();
         $tournament = $faker->words($nb = 6, $variableNbWords = true);
         $new_teams = [];
         for ($new_teams_made = 0; $new_teams_made < $number_of_teams; $new_teams_made++) {
